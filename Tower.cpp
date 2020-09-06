@@ -14,7 +14,7 @@
 #include "Tower.h"
 Tower::Tower(class Game *game) : GameObject(game)
 {
-    SpriteComponengit *spriteComponent = new SpriteComponent(this, 200);
+    SpriteComponent *spriteComponent = new SpriteComponent(this, 200);
     spriteComponent->SetTexture(game->GetTexture("Assets/Tower.png"));
     this->move = new MoveComponent(this);
     this->nextAttack = ATTACKTIME;
